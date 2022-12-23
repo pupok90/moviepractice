@@ -1,0 +1,14 @@
+{
+  "name": "movie-project",
+  "version": "1.0.0",
+  "description": "Movies project for learning",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Alejandro Sanchez",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}

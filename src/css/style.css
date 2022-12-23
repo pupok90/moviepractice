@@ -1,0 +1,37 @@
+h1 {
+}
+
+.movie-card {
+  cursor: pointer;
+}
+.--carousel-section {
+  z-index: 1000;
+}
+.card-img,
+.card-img-top {
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+  z-index: 5000;
+}
+
+.card-img:hover,
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.--card-body {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.card-img-top:hover + .--card-body {
+  transform: translateY(20%);
+  opacity: 1;
+  pointer-events: none;
+  visibility: visible;
+}
